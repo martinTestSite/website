@@ -9,8 +9,9 @@
     }
 
     #sidebar{
+        
+        margin-top: -130%;
         /*
-        margin-top: -50%;
         margin-bottom: -33px;
         */
         font-size: 15px;
@@ -28,6 +29,10 @@
 
     #main-nav-list{
         float:left;         
+    }
+
+    #ProjInfo{
+        font-size: 17px;
     }
 
     #header{
@@ -110,10 +115,33 @@
         <div id="content">			
 
                         <div id="post-content">
-                            <h4 class="widgettitle"><strong>How to use:</strong></h4>
                             
-                            <li>Select multiple audio files, then this website will read the file's header 'length' metadata and calculate an ongoing sum for each track. </li>
-      
+                            <h4><a href="http://tagger.site">tagger.site</a></h4>
+                            <h2 id="ProjInfo"><strong>What:</strong> A basic website that uses javascript to read header metadata from audio files and generates a tracklisted timestamp.</h2>
+                            <h2 id="ProjInfo"><strong>Why:</strong> Before this website, the only way to create these tracklisted timestamps was to manually calculate the tracklengths. A time-consuming task that music-uploaders have been stuck with forever, before tagger.site.</h2>
+                            <br>
+                            <h4><a href="http://www.discogstagger.site">discogstagger.site</a></h4>
+                            <h2 id="ProjInfo"><strong>What:</strong> A ruby-on-rails web app that uses the <a href="https://www.discogs.com/developers/">discogs-api</a> to generate comma sepperated tags based on a discogs release.</h2>
+                            <h2 id="ProjInfo"><strong>Why:</strong> Before this website, if you wanted a list of tags to put in a YouTube video, you would have to write them by hand. This site simplifies the process for music uploaders by generating a list of tags based on a release's artists / band members / alliases / tracklist etc...</h2>
+                            <br>
+                            <h4>(upcomming Spring 2019) De-Centralized Playlist</h4>
+                            <h2 id="ProjInfo"><strong>What:</strong> An android app / chrome extension / SQL server that tracks user music listening history accross multiple devices (Mobile, Desktop) and platforms (Soundcloud, Spotify, YouTube, files, etc).</h2>
+                            <h2 id="ProjInfo"><strong>Why:</strong> Listening data is crucial to generating good analysis, and I want to make listening data more easily obtainable accross platforms.</h2>
+                            <br>
+
+
+                            <h4><a href="https://github.com/MartinBarker/VLC-Radio">VLC-Radio</a></h4>
+                            <h2 id="ProjInfo"><strong>What:</strong> A light-weight python script that pulls song metadata and albumart from VLC media player, and saves it to a desired location.</h2>
+                            <h2 id="ProjInfo"><strong>Why:</strong> Intended to make the process of displaying what's currently-playing easier for streamers. I use this script multiple times for <a href="https://youtu.be/ZGelFeesR-M?t=13821">automated radio streams on YouTube</a>.</h2>
+                            <br>
+                            <h4><a href="https://github.com/MartinBarker/VLC-Playlist-Randomizer">VLC-Playlist-Randomizer</a></h4>
+                            <h2 id="ProjInfo"><strong>What:</strong> Python program to randomize a VLC playlist .xspf file.</h2>
+                            <h2 id="ProjInfo"><strong>Why:</strong> VLC's built in random-feature jumps around and doesn't shuffle all too well. I built this script so I could generate unique playlists for large amounts of songs to play with my VLC-Radio project.</h2>
+                            <br>
+                            <h4><a href="https://github.com/MartinBarker/Simple-Shell-in-C">Simple Shell in C</a></h4>
+                            <h2 id="ProjInfo"><strong>What:</strong> This program executes a simple shell in C, which can run background proccesses, command line arguments, and perform I/O redirection.</h2>
+ 
+                            
                         </div>
     
                         </ul>
@@ -137,13 +165,7 @@
                     <li><a href="mailto:martinbarker99@gmail.com" target="_blank">Click here to send me an email.</a></li>
                 </ul>
             </div>	
-            <div class="widget themify-most-commented">
-                <h4 class="widgettitle">Contribute</h4>
-                <ul class="feature-posts-list">
-                    <li>View and contribute to this project on <a href="https://github.com/MartinBarker/tagger.site" target="_blank">Github</a></li>
-                </ul>
-            </div>		
-            
+  
     
         </aside>
         <!-- /#sidebar -->
