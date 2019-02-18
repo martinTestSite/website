@@ -58,7 +58,15 @@
 #content{
     margin-top: 50px;
 }
+#headerLinks{
+        color: #1f7bb6;   
+    }
 
+    #headerButtons{
+        margin-top: 12px;
+        
+        float:center;
+    }
     </style>
     
     
@@ -73,12 +81,24 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://www.linkedin.com/in/martinbarker99"><span class="martin">Martin</span> <span class="barker">Barker</span></a>
+                <a class="navbar-brand" href="/website/home.html"><span class="martin">Martin</span> <span class="barker">Barker</span></a>
+                
               </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/website/home.html">About Me</a></li>
-                  <li><a href="/website/">Projects</a></li>
+              <div id = 'headerButtons'>
+
+                    <ul id="headerLinks" class="nav navbar-nav navbar-center">
+                            <a href="https://github.com/MartinBarker/tagger.site"><button class="btn btn-sm btn-default" type="button">Github <i class="fa fa-github"></i></button></a>
+                            <a href="mailto:martinbarker99@gmail.com"><button class="btn btn-sm btn-default"  type="button">Email <i class="fa fa-envelope-o"></i></button></a>
+                            <a href="https://www.linkedin.com/in/martinbarker99"><button class="btn btn-sm btn-default"  type="button">LinkedIn<i class="fa fa-linkedin-square"></i></button></a>
+                            <a href="https://www.youtube.com/c/martinradio2"><button class="btn btn-sm btn-default"  type="button">YouTube<i class="fa fa-youtube"></i></button></a>
+                            <a href="http://www.martinradio.com"><button class="btn btn-sm btn-default"  type="button">martinradio<i class="fa fa-broadcast-tower" href="https://static.thenounproject.com/png/96926-200.png"></i></button></a>
+                          </ul>
+                   
+              </div>
+              <div class="collapse navbar-collapse" id="headerLinks">
+                <ul id="headerLinks" class="nav navbar-nav navbar-right">
+                  <li id='headerLinks'><a id="headerLinks" href="/website/home.html">About Me</a></li>
+                  <li id='headerLinks'><a id="headerLinks" href="/website/">Projects</a></li>
 
                 </ul>
               </div>
